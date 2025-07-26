@@ -1,0 +1,135 @@
+.footer {
+	padding: 70px 0px 22px 0px;
+	background: #fff;
+	@media (max-width: $tablet) {
+		padding: 35px 0px 15px 0px;
+	}
+	// .footer__container
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		ul {
+			margin: -3px 0px;
+			@media (max-width: $mobile) {
+				padding: 0px 0px 40px 0px;
+			}
+			li {
+				padding: 3px 0px;
+				@media (max-width: $mobile) {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+				a {
+					color: #71706f;
+					font-size: 14px;
+					font-weight: 400;
+					line-height: math.div(21, 14);
+					transition: all 0.3s ease 0s;
+					&:hover {
+						color: #f32929;
+					}
+					@media (max-width: $mobile) {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+	// .footer__left
+	&__left {
+		flex: 0 1 240px;
+		margin: 0px 62px 0px 0px;
+		@media (max-width: $pc) {
+			margin: 0px 30px 0px 0px;
+		}
+		@media (max-width: $mobile) {
+			flex: 1 1 auto;
+			margin: 0px 0px 30px 0px;
+		}
+	}
+	// .footer__logo
+	&__logo {
+		margin: 0px 0px 34px 0px;
+		display: flex;
+		img {
+			height: 40px;
+			width: auto;
+		}
+		@media (max-width: $mobile) {
+			margin: 0px 0px 0px 0px;
+		}
+	}
+	// .footer__center
+	&__center {
+		flex: 0 1 550px;
+		margin: 0px 86px 0px 0px;
+		@media (max-width: $pc) {
+			margin: 0px 50px 0px 0px;
+		}
+		@media (max-width: $mobile) {
+			flex: 1 1 auto;
+			margin: 0px 0px 23px 0px;
+		}
+	}
+	// .footer__text
+	&__text {
+		color: #3c3c3c;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: math.div(21, 14);
+		margin: 0px 0px 40px 0px;
+		@media (max-width: $mobile) {
+			margin: 0px 0px 28px 0px;
+		}
+		@media (max-width: $mobileSmall) {
+			max-width: 260px;
+		}
+	}
+	// .footer__copy
+	&__copy {
+		color: #71706f;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: math.div(21, 14);
+	}
+	// .footer__right
+	&__right {
+		flex: 0 1 200px;
+		@media (max-width: $mobile) {
+			flex: 1 1 auto;
+		}
+	}
+	// .footer__social
+	&__social {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin: -8px;
+	}
+	// .footer__icon
+	&__icon {
+		flex: 0 1 25%;
+		padding: 8px;
+		@media (max-width: $mobile) {
+			flex: 0 1 auto;
+		}
+		&::before {
+			font-size: 35px;
+			color: #f32929;
+			transition: all 0.3s ease 0s;
+		}
+		&:hover {
+			&::before {
+				color: rgb(199, 29, 29);
+			}
+		}
+	}
+}
